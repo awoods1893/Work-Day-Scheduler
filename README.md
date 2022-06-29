@@ -18,5 +18,8 @@ In this project, I created a simple calendar application that allows a user to s
 - WHEN I refresh the page
 - THEN the saved events persist
 
+
+## [Website URL](https://awoods1893.github.io/Work-Day-Scheduler/)
 # Website ScreenCastify
 ![Screenshot](./Develop/Work%20Day%20Scheduler.gif)
+
