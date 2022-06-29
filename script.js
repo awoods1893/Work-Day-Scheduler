@@ -24,7 +24,7 @@ for (var i = 8; i < 18; i++) {
         document.getElementById(i.toString()).classList.add('past');
     } else if (i === currentTime) {
         document.getElementById(i.toString()).classList.add('present');
-    } else if (i > currenTime) {
+    } else if (i > currentTime) {
         document.getElementById(i.toString()).classList.add('future');
     }
     }
