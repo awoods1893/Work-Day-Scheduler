@@ -1,26 +1,25 @@
-$(document).ready(function () {
+$(document).ready(function () 
+{
+var initialize = false;
+// Date format for the top of the page: Day, Month Date, Year Time (12 hour format)
+var today = moment().format('LLLL'); 
 
-    var initialize = false;
-    // Date format for the top of the page: Day, Month Date, Year Time (12 hour format)
-    var today = moment().format('LLLL'); 
+let today24h = moment().format('H'); // 12 hour clock format
 
-    let today24h = moment().format('H'); // 12 hour clock format
-    let today12h = moment().format('h'); // 24 hour clock format
     if (initialize) {
         today24h = 13;
-        today12h = 1;
+       
     }
 
-    // Displays current date
-    const currentDate = $('#currentDay');
-    currentDate.text(today);
+// Displays current date
+const currentDate = $('#currentDay');
+currentDate.text(today);
+var calendar = new Date(); // initialize the  date and time
+var currentTime = calendar.getHours(); // returns 0-23 on a 24 hour clock
 
-    var calendar = new Date(); // init date and time
-    var currentTime = calendar.getHours(); // returns 0-23 on a 24 hour clock
 
-
-    //color coding for past, present and future times.
-    for (var i = 8; i < 18; i++) {
+//color coding for past, present and future times.
+for (var i = 8; i < 18; i++) {
     if (i < currentTime) {
         document.getElementById(i.toString()).classList.add('past');
     } else if (i === currentTime) {
