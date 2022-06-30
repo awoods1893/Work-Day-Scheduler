@@ -45,6 +45,7 @@ for (var i = 8; i < 18; i++) {
 	var hour5pm = document.getElementById('17').value; localStorage.setItem('text17', hour5pm);
         });
      }
+
 //Keeps the user input on the page even after the page is refreshed
     var savedItem8 = localStorage.getItem('text8'); document.getElementById('8').value = savedItem8;
     var savedItem9 = localStorage.getItem('text9'); document.getElementById('9').value = savedItem9;
